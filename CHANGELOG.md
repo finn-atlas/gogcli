@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.48.1 - Unreleased
+## 0.48.2 - Unreleased
 
 - Calendar: reject non-empty attendee input that yields no addresses instead of clearing every attendee. (jai/gogcli#1)
 
@@ -9,6 +9,10 @@
 - Auth: serialize rekey output publication, recheck concurrent replacement permission and refuse staged permission loss. (jai/gogcli#1)
 
 - Chat: add full SDK message output for list/search, get with markup selection, text-only update/edit, and confirmed delete with explicit reply deletion; preserve compact defaults and wrap nested rich content for agents. (jai/gogcli#1) — thanks @jai.
+
+## 0.48.1 - 2026-11-15
+
+**Highlights:** Safer Gmail replies exclude every send-as alias, Calendar queries and recurring updates handle edge cases correctly, and Go security updates address GO-2026-6859.
 
 - Security: build with Go 1.27.4 and test the minimum series on Go 1.26.11 to address GO-2026-6859, preserving the Go 1.26.0 source minimum.
 - Dependencies: refresh Google clients, networking libraries, and tracking-worker tools while retaining the 24-hour worker cooldown and security overrides.
