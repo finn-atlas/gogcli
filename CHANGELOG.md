@@ -10,6 +10,8 @@
 
 - Chat: add full SDK message output for list/search, get with markup selection, text-only update/edit, and confirmed delete with explicit reply deletion; preserve compact defaults and wrap nested rich content for agents. (jai/gogcli#1) — thanks @jai.
 
+- Dependencies: refresh the MCP and Google API clients, networking libraries, and tracking-worker tooling while preserving the Go 1.26 minimum, 24-hour worker cooldown, and security overrides.
+
 ## 0.48.1 - 2026-11-15
 
 **Highlights:** Safer Gmail replies exclude every send-as alias, Calendar queries and recurring updates handle edge cases correctly, and Go security updates address GO-2026-6859.
